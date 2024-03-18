@@ -1,31 +1,17 @@
 ---
+interface Props 
+{
+	Header : string;
+}
 
+const { Header } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-
-		<script type="text/javascript">
-			function ShowWarning()
-			{
-				alert("ALERTA");
-			}
-		</script>
-
-	</head>
-	
 	<body class="bg-slate-600">
 		<div id="Presentation?">
 			<h1 class="text-center p-2 text-3xl font-bold text-slate-300  bg-slate-500">
-				let's program a 
-				<span class="p-1 rounded-md bg-red-700 text-red-300">WARNING</span> button real quick
+                {Header}
 			</h1>
-			
 			<p class="text-center p-4  text-slate-300"> 
 				Remember TailwindCSS changes the default font-family to sans
 			</p>
@@ -40,4 +26,3 @@
 		</div>
 
 	</body>
-</html>
