@@ -1,16 +1,11 @@
 ---
-interface Props 
-{
-	Header : string;
-}
 
-const { Header } = Astro.props;
 ---
 
 	<body class="bg-slate-600">
 		<div>
 			<h1 class="text-center p-2 text-3xl font-bold text-slate-300  bg-slate-500">
-                {Header}
+                <slot /> 
 			</h1>
 		</div>
 	</body>
