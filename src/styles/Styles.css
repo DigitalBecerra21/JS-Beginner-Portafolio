@@ -1,0 +1,13 @@
+/* Importa Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Define tus estilos personalizados */
+@layer components {
+  .custom-button 
+  {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md;
+    /* También puedes agregar estilos adicionales específicos de tu clase personalizada */
+  }
+}
