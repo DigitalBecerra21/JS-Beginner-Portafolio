@@ -1,5 +1,7 @@
 ---
 import MySlateBody from '../components/MySlateBody.astro'
+
+const url = "http://localhost:1234";
 ---
 
 <html lang="en">
@@ -12,30 +14,32 @@ import MySlateBody from '../components/MySlateBody.astro'
 
 	</head>
 
-	<body>
-		<MySlateBody>
-			<span>WELCOME to my 
-				<span class="p-1 rounded-md bg-yellow-400 bg-opacity-50 text-yellow-300">JavaScript</span>
-                  Begginer Portafolio
-		    </span>
-		</MySlateBody>
-
-
-
-		<div class="MySlate-text">
-			Current projects:
-		</div>
-
-		<div id="NavButtons">
-
-		</div>
-
-	</body>
+	<body >
+		<form action="http://localhost:1234">
+			<MySlateBody>
+				<span>WELCOME to my 
+					<span class="p-1 rounded-md bg-yellow-400 bg-opacity-50 text-yellow-300">JavaScript</span>
+					  Begginer Portafolio
+				</span>
+			</MySlateBody>
 	
-
-
-
-
-
-</div>
+	
+	
+			<div class="MySlate-text">
+				Current projects:
+			</div>
+	
+			<div id="NavButtons" class="m-6 p-4 space-x-10 space-y-10 justify-between text-center items-center">
+				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				
+	
+			</div>
+	
+		</body>
+	</div>
+		</form>
 </html>
