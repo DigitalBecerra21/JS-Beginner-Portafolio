@@ -29,17 +29,29 @@ const url = "http://localhost:1234";
 				Current projects:
 			</div>
 	
-			<div id="NavButtons" class="m-6 p-4 space-x-10 space-y-10 justify-between text-center items-center">
-				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				
+			<div id="NavButtons" class="m-6">
+				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+
 	
 			</div>
 	
 		</body>
-	</div>
 		</form>
+
+		<style>
+	  #NavButtons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    }
+    .NavButton {
+      flex: 0 0 auto;
+      margin: 10px;
+    }
+		</style>
 </html>
