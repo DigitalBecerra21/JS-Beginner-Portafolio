@@ -29,29 +29,69 @@ const url = "http://localhost:1234";
 				Current projects:
 			</div>
 	
-			<div id="NavButtons" class="m-6">
-				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
-				<a class="p-4 NavButton MySlate-text rounded-xl bg-slate-500" href="/WarningButton"> button </a>
+			<div id="NavButtons" class="m-6 content-center ">
+				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton MySlate-text" href="/WarningButton"> button </a>
+				<a class=" NavButton MySlate-text" href="/WarningButton"> button </a>
 
 	
 			</div>
+
+	    <div class="NAVIGATION BAR mx-16 my-6 h-14 p-3 text-center  font-sans bg-gray-700 
+	              text-white font-extrabold space-x-28 text-2xl  rounded-full scal">
+
+		  <a class=" hover:bg-gray-800 rounded -xl p-1.5" href="/">Inicio</a>
+		  <a class="hover:bg-gray-800 rounded -xl p-1.5"href="/AboutMe/">Sobre mi</a>
+		  <a class="bg-gray-500 rounded p-1.5" href="">Habilidades</a>
+		  <a class="hover:bg-gray-800 rounded p-1.5" href="/Contact/">Contacto</a>
+	    </div>
 	
 		</body>
 		</form>
 
 		<style>
-	  #NavButtons {
+
+			
+	#NavButtons 
+	{
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between; /* Distribuye el espacio entre los elementos */
+	  justify-content: center;
+	  align-items: center;
+	  
     }
-    .NavButton {
+
+    .NavButton 
+	{ 
       flex: 0 0 auto;
-      margin: 10px;
+	  width: 250px;
+	  height: 210px;
+	  
+	  border-radius: 15%;
+	  --tw-bg-opacity: 1;
+      background-color: rgb(100 116 139 / var(--tw-bg-opacity));
     }
+
+	.NavButton:hover
+	{
+
+	}
+
+	.MySlate-text
+	{
+	  text-align: center;
+	  margin: 10px;
+	  margin-left: 30px;
+	  margin-right: 30px;	 
+
+	  
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: rgb(203, 213, 225);
+	}
+	
 		</style>
 </html>
