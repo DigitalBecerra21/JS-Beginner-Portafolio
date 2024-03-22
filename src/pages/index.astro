@@ -29,13 +29,13 @@ const url = "http://localhost:1234";
 				Current projects:
 			</div>
 	
-			<div id="NavButtons" class="m-6 content-center ">
-				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
-				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
-				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
-				<a class=" NavButton MySlate-text" href="/WarningButton"> Warning Button </a>
-				<a class=" NavButton MySlate-text" href="/WarningButton"> button </a>
-				<a class=" NavButton MySlate-text" href="/WarningButton"> button </a>
+			<div id="NavButtons" class="m-6">
+				<a class=" NavButton show " href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton show" href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton " href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton " href="/WarningButton"> Warning Button </a>
+				<a class=" NavButton " href="/WarningButton"> button </a>
+				<a class=" NavButton " href="/WarningButton"> button </a>
 
 	
 			</div>
@@ -64,28 +64,60 @@ const url = "http://localhost:1234";
 	  
     }
 
-    .NavButton 
+	@keyframes FadeIn 
+	{
+		0% 
+		{
+			opacity: 0;
+			transform: translateY(50px);
+		}
+
+		100% 
+		{
+			opacity: 1;
+			transform: translateY(0px);
+
+		}
+	}
+
+    .NavButton
 	{ 
       flex: 0 0 auto;
 	  width: 250px;
 	  height: 210px;
+
+	  
 	  
 	  border-radius: 15%;
 	  --tw-bg-opacity: 1;
       background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+
+	  transition-duration: 600ms;
+	  
+	  animation: FadeIn ease 2s;
+
+	  text-align: center;
+	  margin: 10px;
+	  margin-left: 40px;
+	  margin-right: 40px;
+	  margin-bottom: 50px;	 
+
+	  
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: rgb(203, 213, 225);
     }
 
 	.NavButton:hover
 	{
-
+		background-color: colo;
+		scale: 1.2;
 	}
 
 	.MySlate-text
 	{
 	  text-align: center;
-	  margin: 10px;
-	  margin-left: 30px;
-	  margin-right: 30px;	 
+	  margin: 20px; 
 
 	  
       font-size: 1.875rem;
