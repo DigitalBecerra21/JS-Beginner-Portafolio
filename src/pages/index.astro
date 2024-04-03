@@ -2,6 +2,8 @@
 import MySlateBody from '../components/MySlateBody.astro'
 
 const url = "http://localhost:1234";
+
+console.log(this);
 ---
 
 <html lang="en">
@@ -40,15 +42,6 @@ const url = "http://localhost:1234";
 	
 			</div>
 
-	    <div class="NAVIGATION BAR mx-16 my-6 h-14 p-3 text-center  font-sans bg-gray-700 
-	              text-white font-extrabold space-x-28 text-2xl  rounded-full scal">
-
-		  <a class=" hover:bg-gray-800 rounded -xl p-1.5" href="/">Inicio</a>
-		  <a class="hover:bg-gray-800 rounded -xl p-1.5"href="/AboutMe/">Sobre mi</a>
-		  <a class="bg-gray-500 rounded p-1.5" href="">Habilidades</a>
-		  <a class="hover:bg-gray-800 rounded p-1.5" href="/Contact/">Contacto</a>
-	    </div>
-	
 		</body>
 		</form>
 
@@ -61,8 +54,9 @@ const url = "http://localhost:1234";
       flex-wrap: wrap;
 	  justify-content: center;
 	  align-items: center;
-	  
     }
+
+
 
 	@keyframes FadeIn 
 	{
@@ -86,15 +80,12 @@ const url = "http://localhost:1234";
 	  width: 250px;
 	  height: 210px;
 
-	  
-	  
 	  border-radius: 15%;
 	  --tw-bg-opacity: 1;
       background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 
 	  transition-duration: 600ms;
-	  
-	  animation: FadeIn ease 2s;
+	  animation: FadeIn ease 100ms;
 
 	  text-align: center;
 	  margin: 10px;
@@ -103,7 +94,7 @@ const url = "http://localhost:1234";
 	  margin-bottom: 50px;	 
 
 	  
-      font-size: 1.875rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: rgb(203, 213, 225);
     }
@@ -112,14 +103,34 @@ const url = "http://localhost:1234";
 	{
 		background-color: colo;
 		scale: 1.2;
+		box-shadow: 0 0 10px slategray;
+		font-size: 2.8rem;
 	}
+
+	/*
+	.NavButton:first-child
+	{
+		animation-delay: 0s;
+	}
+
+	.NavButton:nth-child(2)
+	{
+		animation-delay: 1s;
+	}
+
+	.NavButton:nth-child(3)
+	{
+		animation-delay: 2s;
+
+	}
+	*/
+
 
 	.MySlate-text
 	{
 	  text-align: center;
 	  margin: 20px; 
 
-	  
       font-size: 1.875rem;
       font-weight: 700;
       color: rgb(203, 213, 225);
